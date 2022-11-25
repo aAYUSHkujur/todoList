@@ -7,7 +7,7 @@ const app = express();
 mongoose.connect("mongodb://localhost:27017/todolistDB");
 
 const itemSchema = {
-  name: String,
+  name: String
 };
 
 const Item = mongoose.model("item", itemSchema);
