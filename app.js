@@ -55,9 +55,11 @@ app.get("/", function (req, res) {
 app.post("/", function (req, res) {
   const itemName = req.body.newItem;
 
-  const ItemN = new Item({
+  const item = new Item({
     name: itemName,
-  });
+  }); 
+
+  item.save();
 });
 
 app.get("/work", function (req, res) {
