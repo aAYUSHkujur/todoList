@@ -146,6 +146,6 @@ app.get("/about", function (req, res) {
   res.render("about");
 });
 
-app.listen(PORT, function () {
+app.listen(port, function () {
   console.log("Server up and running in port 3000!");
 });
